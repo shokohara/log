@@ -88,11 +88,8 @@ libraryDependencies ++= Seq(
   "org.scalatestplus.play" %% "scalatestplus-play" % scalatestplusplay % Test,
   "ch.qos.logback" % "logback-classic" % "0.9.28",
   "com.github.seratch" %% "awscala" % "0.6.+",
-  "org.webjars" % "AdminLTE" % "2.3.8",
-  "org.webjars" % "font-awesome" % "4.7.0",
-  "org.webjars" % "ionicons" % "2.0.1",
+  "org.webjars" % "bootstrap" % "4.0.0-beta-1",
   "org.webjars" % "webjars-play_2.12" % "2.6.2",
-  "org.webjars.bower" % "csv-js" % "1.1.1",
   "com.typesafe.scala-logging" %% "scala-logging" % "3.7.2"
 )
 

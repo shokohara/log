@@ -19,4 +19,9 @@ class HomeController(defaultCacheApi: AsyncCacheApi, indexView: index, cc: Contr
     data = data :+ request.body
     Redirect(routes.HomeController.index())
   }
+
+  def clear = Action { implicit request: Request[AnyContent] =>
+    data = List.empty[AnyContent]
+    Redirect(routes.HomeController.index())
+  }
 }

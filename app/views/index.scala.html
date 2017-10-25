@@ -2,9 +2,18 @@
 @(values: List[String])
 
 @main("Home") {
+  <form action="/clear" method="GET">
+    <button type="submit" class="btn">clear</button>
+  </form>
   <ul>
   @for(v <- values) {
-    <li>@v</li>
+    <li>
+      <div class="card">
+        <div class="card-body">
+          @v
+        </div>
+      </div>
+    </li>
   }
   </ul>
 }
