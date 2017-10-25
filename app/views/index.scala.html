@@ -1,0 +1,10 @@
+@this(main: main)
+@(values: List[String])
+
+@main("Home") {
+  <ul>
+  @for(v <- values) {
+    <li>@v</li>
+  }
+  </ul>
+}
